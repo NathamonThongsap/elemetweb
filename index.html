@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตารางธาตุ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="calim.css">
+    
+    <link rel="stylesheet" href="sty.css">
+
+    <script src="script.js"></script>
+    <script src="mn.js"></script>
+</head>
+<body>
+    <header>
+        
+        <img src="images\logo.png" alt="โลโก้">
+        <h1>ตารางธาตุ</h1>
+        <h2>สื่อการสอนการทดลองผสมสารเคมีด้วยคอมพิวเตอร์</h2>
+    
+    </header>
+
+    <main>
+        <div class="table-container" id="periodic-table">
+            </div>
+   
+    <div class="table-container">
+
+        <div class="element" onclick="showPopup('H', 'ไฮโดรเจน', 1,'images/1.jpg')"><span class="symbol">H</span></div>
+        <div class="empty">
+        </div><div class="empty">
+        </div><div class="empty">
+        </div><div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty">
+        </div><div class="empty">
+        </div><div class="empty">
+        </div><div class="empty">
+        </div><div class="empty">
+        </div>
+        <div class="empty">
+        </div><div class="empty">
+        </div><div class="empty">
+        </div>
+        <div class="empty">
+        </div><div class="empty">
+        </div><div class="empty"></div>
+        <div class="element" onclick="showPopup('He', 'ฮีเลียม', 2,'images/2.jpg')"><span class="symbol">He</span>
+        </div>
+        <div class="element" onclick="showPopup('Li', 'ลิเทียม', 3,'images/3.jpg')"><span class="symbol">Li</span></div>
+        <div class="element" onclick="showPopup('Be', 'เบริลเลียม', 4,'images/4.jpg')"><span class="symbol">Be</span></div>
+        <div class="empty">
+        </div>
+        <div class="empty">
+        </div><div class="empty">
+        </div><div class="empty"></div>
+        <div class="empty">
+        </div><div class="empty">
+        </div><div class="empty">
+        </div><div class="empty">
+        </div>
+        <div class="empty">
+        </div><div class="empty"></div>
+        <div class="element" onclick="showPopup('B', 'โบรอน', 5,'images/5.jpg')"><span class="symbol">B</span></div>
+        <div class="element" onclick="showPopup('C', 'คาร์บอน', 6,'images/6.jpg')"><span class="symbol">C</span></div>
+        <div class="element" onclick="showPopup('N', 'ไนโตรเจน', 7,'images/7.jpg')"><span class="symbol">N</span></div>
+        <div class="element" onclick="showPopup('O', 'ออกซิเจน', 8,'images/8.jpg')"><span class="symbol">O</span></div>
+        <div class="element" onclick="showPopup('F', 'ฟลูออรีน', 9,'images/9.jpg')"><span class="symbol">F</span></div>
+        <div class="element" onclick="showPopup('Ne', 'นีออน', 10,'images/10.jpg')"><span class="symbol">Ne</span></div>
+        <div class="element" onclick="showPopup('Na', 'โซเดียม', 11,'images/11.jpg')">  <span class="symbol">Na</span> </div>
+        <div class="element" onclick="showPopup('Mg', 'แมกนีเซียม', 12,'images/12.jpg')"><span class="symbol">Mg</span></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="empty"></div><div class="empty"></div>
+        <div class="element" onclick="showPopup('Ai', 'อลูมิเนียม', 13,'images/16.jpg')"><span class="symbol">Ai</span> </div>
+        <div class="element" onclick="showPopup('Si', 'ซิลิคอน', 14,'images/17.jpg')"><span class="symbol">Si</span></div>
+        <div class="element" onclick="showPopup('P', 'ฟอสฟอรัส', 15,'images/18.jpg')"><span class="symbol">P</span></div>
+        <div class="element" onclick="showPopup('S', 'กำมะถัน', 16,'images/19.jpg')"><span class="symbol">S</span></div>
+        <div class="element" onclick="showPopup('Cl', 'คลอรีน', 17,'images/20.jpg')"><span class="symbol">Cl</span></div>
+        <div class="element" onclick="showPopup('Ar', 'อาร์กอน', 18,'images/21.jpg')"><span class="symbol">Ar</span></div>
+        <div class="element" onclick="showPopup('K', 'โพแทสเซียม', 19,'images/22.jpg')"><span class="symbol">K</span></div>           
+        <div class="element" onclick="showPopup('Ca', 'แคลเซียม', 20,'images/23.jpg')"><span class="symbol">Ca</span></div>
+        <div class="element" onclick="showPopup('Sc', 'สแกนเดียม', 21,'images/24.jpg')"><span class="symbol">Sc</span></div>
+        <div class="element" onclick="showPopup('Ti', 'ไทเทเนียม', 22,'images/25.jpg')"><span class="symbol">Ti</span></div>
+        <div class="element" onclick="showPopup('V', 'วาเนเดียม', 23,'images/26.jpg')"><span class="symbol">V</span></div>
+        <div class="element" onclick="showPopup('Cr', 'โครเมียม', 24,'images/27.jpg')"><span class="symbol">Cr</span></div>
+        <div class="element" onclick="showPopup('Mn', 'แมงกานีส', 25,'images/28.jpg')"><span class="symbol">Mn</span></div>
+        <div class="element" onclick="showPopup('Fe', 'เหล็ก', 26,'images/29.jpg')"><span class="symbol">Fe</span></div>
+        <div class="element" onclick="showPopup('Co', 'โคบอลต์', 27,'images/30.jpg')"><span class="symbol">Co</span></div>
+        <div class="element" onclick="showPopup('Ni', 'นิกเกิล', 28,'images/31.jpg')"><span class="symbol">Ni</span></div>
+        <div class="element" onclick="showPopup('Cu', 'ทองแดง', 29,'images/32.jpg')"><span class="symbol">Cu</span></div>
+        <div class="element" onclick="showPopup('Zn', 'สังกะสี', 30,'images/33.jpg')"><span class="symbol">Zn</span></div>
+        <div class="element" onclick="showPopup('Ga', 'กัลเลียม', 31,'images/34.jpg')"><span class="symbol">Ga</span></div>
+        <div class="element" onclick="showPopup('Ge', 'เยอรมาเนียม', 32,'images/35.jpg')"><span class="symbol">Ge</span></div>
+        <div class="element" onclick="showPopup('As', 'อาร์เซนิก', 33,'images/36.jpg')"><span class="symbol">As</span></div>
+        <div class="element" onclick="showPopup('Se', 'ซีลีเนียม', 34,'images/37.jpg')"><span class="symbol">Se</span></div>
+        <div class="element" onclick="showPopup('Br', 'โบรมีน', 35,'images/38.jpg')"><span class="symbol">Br</span></div>
+        <div class="element" onclick="showPopup('Kr', 'คริปทอน', 36,'images/39.jpg')"><span class="symbol">Kr</span></div>
+        <div class="element" onclick="showPopup('Rb', 'รูบิเดียม', 37,'images/53.jpg')"><span class="symbol">Rb</span></div>
+        <div class="element" onclick="showPopup('Sr', 'สตรอนเทียม', 38,'images/40.jpg')"><span class="symbol">Sr</span></div>
+        <div class="element" onclick="showPopup('Y', 'อิตเทรียม', 39,'images/41.jpg')"><span class="symbol">Y</span></div>
+        <div class="element" onclick="showPopup('Zr', 'ซิริโคเนียม', 40,'images/42.jpg')"><span class="symbol">Zr</span></div>
+        <div class="element" onclick="showPopup('Nb', 'ไนโอเบียม', 41,'images/43.jpg')"><span class="symbol">Nb</span></div>
+        <div class="element" onclick="showPopup('Mo', 'โมลิบดีนัม', 42,'images/44.jpg')"><span class="symbol">Mo</span></div>
+        <div class="element" onclick="showPopup('Tc', 'เทคนีเซียม', 43,'images/45.jpg')"><span class="symbol">Tc</span></div>
+        <div class="element" onclick="showPopup('Ru', 'รูเทเนียม', 44,'images/46.jpg')"><span class="symbol">Ru</span></div>
+        <div class="element" onclick="showPopup('Rh', 'ไรโอเดียม', 45,'images/47.jpg')"><span class="symbol">Rh</span></div>
+        <div class="element" onclick="showPopup('Pd', 'แพลตินัม', 46,'images/48.jpg')"><span class="symbol">Pd</span></div>
+        <div class="element" onclick="showPopup('Ag', 'เงิน', 47,'images/50.jpg')"><span class="symbol">Ag</span></div>
+        <div class="element" onclick="showPopup('Cd', 'แคดเมียม', 48,'images/49.jpg')"><span class="symbol">Cd</span></div>
+        <div class="element" onclick="showPopup('In', 'อินเดียม', 49,'images/51.jpg')"><span class="symbol">In</span></div>
+        <div class="element" onclick="showPopup('Sn', 'ดีบุก', 50,'images/52.jpg')"><span class="symbol">Sn</span></div>
+        <div class="element" onclick="showPopup('Sb', 'แอนติโมนี', 51,'images/54.jpg')"><span class="symbol">Sb</span></div>
+         <div class="element" onclick="showPopup('Te', 'เทลลูเรียม', 53,'images/55.jpg')"><span class="symbol">Te</span></div>
+         <div class="element" onclick="showPopup('I', 'ไอโอดีน', 52,'images/56.jpg')"><span class="symbol">I</span></div>
+        <div class="element" onclick="showPopup('Xe', 'ซีนอน', 54,'images/57.jpg')"><span class="symbol">Xe</span></div>
+        <div class="element" onclick="showPopup('Cs', 'ซีเซียม', 55,'images/58.jpg')"><span class="symbol">Cs</span></div>
+        <div class="element" onclick="showPopup('Ba', 'แบเรียม', 56,'images/59.jpg')"><span class="symbol">Ba</span></div> 
+        <div class="element" onclick="showPopup('*' )"><span class="symbol">*</span></div>
+        <div class="element" onclick="showPopup('Hf', 'ฮาฟเนียม', 72,'images/60.jpg')"><span class="symbol">Hf</span></div>
+        <div class="element" onclick="showPopup('Ta', 'แทนทาลัม', 73,'images/61.jpg')"> <span class="symbol">Ta</span></div>
+        <div class="element" onclick="showPopup('W', 'วูลฟรัม', 74,'images/62.jpg')"><span class="symbol">W</span></div>
+        <div class="element" onclick="showPopup('Re', 'เรเนียม', 75,'images/63.jpg')"><span class="symbol">Re</span></div>
+        <div class="element" onclick="showPopup('Os', 'ออสเมียม', 76,'images/64.jpg')"><span class="symbol">Os</span></div>
+        <div class="element" onclick="showPopup('Ir', 'อิริเดียม', 77,'images/65.jpg')"><span class="symbol">Ir</span></div>
+        <div class="element" onclick="showPopup('Pt', 'แพลตินัม', 78,'images/66.jpg')"><span class="symbol">Pt</span></div>
+        <div class="element" onclick="showPopup('Au', 'ทองคำ', 79,'images/67.jpg')"><span class="symbol">Au</span></div>
+        <div class="element" onclick="showPopup('Hg', 'ปรอท', 80,'images/68.jpg')"><span class="symbol">Hg</span></div>
+        <div class="element" onclick="showPopup('Tl', 'ทัลเลียม', 81,'images/69.jpg')"><span class="symbol">Tl</span></div>
+        <div class="element" onclick="showPopup('Pb', 'ตะกั่ว', 82,'images/70.jpg')"><span class="symbol">Pb</span></div>
+        <div class="element" onclick="showPopup('Bi', 'บิสมัท', 83,'images/71.jpg')"><span class="symbol">Bi</span></div>
+        <div class="element" onclick="showPopup('Po', 'โพโลเนียม', 84,'images/72.jpg')"><span class="symbol">Po</span></div>
+        <div class="element" onclick="showPopup('At', 'อัสตาทีน', 85,'images/73.jpg')"><span class="symbol">At</span></div>
+        <div class="element" onclick="showPopup('Rn', 'เรดอน', 86,'images/74.jpg')"><span class="symbol">Rn</span></div>
+        <div class="element" onclick="showPopup('Fr', 'ฟรานเซียม', 87,'images/75.jpg')"><span class="symbol">Fr</span></div>
+        <div class="element" onclick="showPopup('Ra', 'เรเดียม', 88,'images/76.jpg')"><span class="symbol">Ra</span></div>
+        <div class="element" onclick="showPopup('*' )"><span class="symbol">*</span>  </div>
+        <div class="element" onclick="showPopup('Rf', 'เรนเฮอร์เดียม', 104,'images/77.jpg')"><span class="symbol">Rf</span></div>
+        <div class="element" onclick="showPopup('Db', 'ดับเนียม', 105)"> <span class="symbol">Db</span></div>
+        <div class="element" onclick="showPopup('Sg', 'ซีบอร์เกียม', 106)"><span class="symbol">Sg</span></div>
+        <div class="element" onclick="showPopup('Bh', 'บูเรียม', 107)"><span class="symbol">Bh</span></div>
+        <div class="element" onclick="showPopup('Hs', 'ฮัสเซียม', 108)"><span class="symbol">Hs</span></div>
+        <div class="element" onclick="showPopup('Mt', 'เมเทียม', 109)"><span class="symbol">Mt</span></div>
+        <div class="element" onclick="showPopup('Ds', 'ดาร์มสตาดเทียม', 110)"><span class="symbol">Ds</span></div>
+        <div class="element" onclick="showPopup('Rg', 'เรนจ์เบอร์เกียม', 111)"><span class="symbol">Rg</span></div>
+        <div class="element" onclick="showPopup('Cn', 'คอปเปอร์เนียม', 112)"><span class="symbol">Cn</span></div>
+        <div class="element" onclick="showPopup('Nh', 'นิฮอนเนียม', 113)"><span class="symbol">Nh</span></div>
+        <div class="element" onclick="showPopup('Fl', 'ฟลอเรียม', 114)"><span class="symbol">Fl</span></div>
+        <div class="element" onclick="showPopup('Mc', 'มอสโคเวียม', 115)"><span class="symbol">Mc</span></div>
+        <div class="element" onclick="showPopup('Lv', 'ลิเวอร์มอเรียม', 116)"><span class="symbol">Lv</span></div>
+        <div class="element" onclick="showPopup('Ts', 'เทนเนสซีน', 117)"><span class="symbol">Ts</span></div>
+        <div class="element" onclick="showPopup('Og', 'โอแกนเนสัน', 118)"><span class="symbol">Og</span></div>
+    </div>   
+    <div class="lanthanide-row">
+        <div class="element fixed" onclick="showPopup('La', 'แลนทานัม', 57,'images/119.jpg')"><span class="symbol">La</span></div>
+        <div class="element" onclick="showPopup('Ce', 'ซีเรียม', 58,'images/78.jpg')"><span class="symbol">Ce</span></div>
+        <div class="element" onclick="showPopup('Pr', 'เพรซิโอไดเมียม', 59,'images/79.jpg')"><span class="symbol">Pr</span></div>
+        <div class="element" onclick="showPopup('Nd', 'นีโอไดเมียม', 60,'images/80.jpg')"><span class="symbol">Nd</span></div>
+        <div class="element" onclick="showPopup('Pm', 'โพรมีเทียม', 61,'images/81.jpg')"><span class="symbol">Pm</span></div>
+        <div class="element" onclick="showPopup('Sm', 'ซาแมเรียม', 62,'images/82.jpg')"><span class="symbol">Sm</span></div>
+        <div class="element" onclick="showPopup('Eu', 'ยูโรเพียม', 63,'images/83.jpg')"><span class="symbol">Eu</span></div>
+        <div class="element" onclick="showPopup('Gd', 'กาโดลิเนียม', 64,'images/84.jpg')"><span class="symbol">Gd</span></div>
+        <div class="element" onclick="showPopup('Tb', 'เทอร์เบียม', 65,'images/85.jpg')"><span class="symbol">Tb</span></div>
+        <div class="element" onclick="showPopup('Dy', 'ดิสโพรเซียม', 66,'images/86.jpg')"><span class="symbol">Dy</span></div>
+        <div class="element" onclick="showPopup('Ho', 'โฮลเมียม', 67,'images/87.jpg')"><span class="symbol">Ho</span></div>
+        <div class="element" onclick="showPopup('Er', 'เออร์เบียม', 68,'images/88.jpg')"><span class="symbol">Er</span></div>
+        <div class="element" onclick="showPopup('Tm', 'ทูเลียม', 69,'images/89.jpg')"><span class="symbol">Tm</span></div>
+        <div class="element" onclick="showPopup('Yb', 'อิตเทอร์เบียม', 70,'images/90.jpg')"><span class="symbol">Yb</span></div>
+        <div class="element" onclick="showPopup('Lu', 'ลูทีเชียม', 71,'images/91.jpg')"><span class="symbol">Lu</span></div>
+        <div class="element" onclick="showPopup('Ac', 'แอกทิเนียม', 89,'images/92.jpg')"><span class="symbol">Ac</span></div>
+        <div class="element" onclick="showPopup('Th', 'ทอเรียม', 90)"><span class="symbol">Th</span></div>
+        <div class="element" onclick="showPopup('Pa', 'โปรแทกทิเนียม', 91,'images/93.jpg')"><span class="symbol">Pa</span></div>
+        <div class="element" onclick="showPopup('U', 'ยูเรเนียม', 92,'images/94.jpg')"><span class="symbol">U</span></div>
+        <div class="element" onclick="showPopup('Np', 'เนปทูเนียม', 93,'images/95.jpg')"><span class="symbol">Np</span></div>
+        <div class="element" onclick="showPopup('Pu', 'พลูโทเนียม', 94,'images/96.jpg')"><span class="symbol">Pu</span></div>
+        <div class="element" onclick="showPopup('Am', 'อเมริเซียม', 95)"><span class="symbol">Am</span></div>
+        <div class="element" onclick="showPopup('Cm', 'คูเรียม', 96,'images/97.jpg')"><span class="symbol">Cm</span></div>
+        <div class="element" onclick="showPopup('Bk', 'เบอร์คีเลียม', 97)"><span class="symbol">Bk</span></div>
+        <div class="element" onclick="showPopup('Cf', 'แคลิฟอร์เนียม', 98)"><span class="symbol">Cf</span></div>
+        <div class="element" onclick="showPopup('Es', 'ไอน์สไตเนียม', 99)"><span class="symbol">Es</span></div>
+        <div class="element" onclick="showPopup('Fm', 'เฟอร์เมียม', 100)"><span class="symbol">Fm</span></div>
+        <div class="element" onclick="showPopup('Md', 'เมนเดเลเวียม', 101,'images/98.jpg')"><span class="symbol">Md</span></div>
+        <div class="element" onclick="showPopup('No', 'โนบีเลียม', 102,'images/99.jpg')"><span class="symbol">No</span></div>
+        <div class="element" onclick="showPopup('Lr', 'ลอว์เรนเซียม', 103,'images/100.jpg')"><span class="symbol">Lr</span></div>
+    </div>
+    <div id="details" class="details"></div>
+     <!-- ป๊อปอัป -->
+     <div id="popup">
+        <h3 id="popup-title"></h3>
+        <p id="popup-symbol"></p>
+        <p id="popup-atomicNumber"></p>
+        <img id="popup-image" src="" alt="รูปภาพธาตุ">
+        <br>
+        <button onclick="closePopup()">ตกลง</button>
+    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰ เปิดเมนู</button>
+    <nav id="menu" class="hidden">
+        <ul>
+            <li><a href="HP.html">หน้าหลัก</a></li>
+            <li><a href="t1.html">ตารางธาตุ</a></li>
+            <li><a href="pt.html">ปฏิกิริยา</a></li>
+            
+        </ul>
+    </nav>
+    <script src="mn.js"></script> <!-- เชื่อมต่อไฟล์ JavaScript -->
+
+
+
+    
+</body>
+</html>
