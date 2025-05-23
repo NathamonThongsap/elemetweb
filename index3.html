@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Form</title>
+    <h2>สื่อการสอนการทดลองผสมสารเคมีด้วยคอมพิวเตอร์</h2>
+    
+    <link rel="stylesheet" href="styy.css">
+
+    
+    
+</head>
+<body>
+
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="Enter search term...">
+        <button class="search-btn" onclick="searchFunction()">Search</button>
+    </div>
+
+    <div class="result"></div>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰ เปิดเมนู</button>
+    <nav id="menu" class="hidden">
+        <ul>
+            <li><a href="HP.html">หน้าหลัก</a></li>
+            <li><a href="t1.html">ตารางธาตุ</a></li>
+            <li><a href="pt.html">ปฏิกิริยา</a></li>
+        </ul>
+    </nav>
+
+    <script src="mn.js"></script> <!-- เชื่อมต่อไฟล์ JavaScript -->
+    <script src="search.js"></script> <!-- เชื่อมต่อไฟล์ JavaScript -->
+
+</body>
+</html>

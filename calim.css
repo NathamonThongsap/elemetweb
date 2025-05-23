@@ -1,0 +1,80 @@
+/* ตารางรวม */.table-container {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: auto; 
+  }
+  
+  /* ธาตุ */.element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #e3f2fd;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }.element:hover {
+    background-color: #90caf9; 
+    transform: scale(1.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  }.element span {
+    display: block;
+  }.element.number {
+    font-size: 10px;
+    color: #666;
+  }.element.symbol {
+    font-size: 16px;
+    font-weight: bold;
+  }.element.name {
+    font-size: 10px;
+    color: #333;
+  }.empty {
+    background-color: transparent;
+    border: none;
+  }
+  
+  /* แถว Lanthanide */.lanthanide-row {
+    display: grid;
+    grid-template-columns: 50px repeat(14, 1fr); 
+    gap: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 90%;
+    background-color: #fce4ec;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ธาตุในแถว Lanthanide */.lanthanide-row.element {
+    background-color: #e1bee7; 
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }.lanthanide-row.element:hover {
+    background-color: #d1c4e9; 
+    transform: scale(1.05) rotate(5deg); 
+  }
+  
+  /* คอลัมน์ที่ไม่ยืด (Fixed) */.lanthanide-row.fixed {
+    width: 50px; 
+  }

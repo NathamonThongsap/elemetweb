@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าปกเว็บไซต์</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .cover {
+            width: 100%;
+            height: 100vh;
+            background-image: url('c:\Users\BOW\Downloads\HP.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(30, 31, 30);
+            text-align: center;
+            position: relative;
+        }
+        .cover img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .content {
+            background: none;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            top: -50px;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 2.0rem;
+        }
+
+.nav-buttons-center {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.nav-buttons-center button {
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-buttons-center button:hover {
+  background-color: #a29bfe;
+  transform: scale(1.05);
+}
+.toggle-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ff7675;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1100;
+}
+    </style>
+</head>
+<body>
+    <div class="cover"id="navbar">
+        <img src="D:\project\images\HP.jpg" alt="หน้าปก">
+        <div class="content">
+            <h1>การทดลองผสมสารเคมี</h1>
+            <p>และตารางธาตุ</p>
+        </div>
+    </div>
+   
+    <div class="nav-buttons-center" id="navBar">
+        <button onclick="location.href='HP.html'">หน้าหลัก</button>
+        <button onclick="location.href='t1.html'">ตารางธาตุ</button>
+        <button onclick="location.href='pt.html'">ปฏิกิริยาเคมี</button>
+      </div>
+    
+      <button class="toggle-button" onclick="toggleNavBar()">เปิดเมนู</button>
+    </div>
+      <script>
+        function toggleNavBar() {
+          const nav = document.getElementById('navBar');
+          if (nav.style.display === 'none') {
+            nav.style.display = 'flex';
+          } else {
+            nav.style.display = 'none';
+          }
+        }
+      </script>
+    </body>
+    </html>
+    
+

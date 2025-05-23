@@ -1,0 +1,45 @@
+/* กำหนดการตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* กล่องที่บรรจุปุ่มและกล่องข้อความ */
+.search-container {
+    text-align: center;
+}
+
+/* กล่องข้อความขนาดใหญ่ */
+.search-box {
+    width: 80%;
+    max-width: 600px;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* ปุ่มค้นหาที่อยู่ตรงกลาง */
+.search-btn {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* เปลี่ยนสีปุ่มเมื่อชี้เมาส์ */
+.search-btn:hover {
+    background-color: #0056b3;
+}
